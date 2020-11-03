@@ -1,30 +1,26 @@
-<div class="container d-flex justify-content-around">
-    <div class="image">
-        <img src={{show.image}}>
-    </div>
-    <div class="details">
-        <table>
-            <tr>
-                <td>Name: </td>
-                <td>{{show.name}}</td>
-            </tr>
-            <tr>
-                <td>Rating: </td>
-                <td>{{show.rating}}</td>
-            </tr>
+<div class="card">
+    <h4 class="card-header">
+        {{show.name}}
+    </h4>
+    <div class="row no-gutters">
+        <div class="col-md-3">
+            <img src={{show.image}} class="card-img" alt="">
+        </div>
 
-            <tr>
-                <td>Summary: </td>
-                <td>{{{show.summary}}}</td>
-            </tr>
-            <tr>
-                <td>Website:</td>
-                <td><a href={{show.official_site}} target="_blank">Go to official site</a></td>
-            </tr>
-        </table>
-        <a href="/">Back</a>
+        <div class="col-md-9">
+            <div class="card-body">
+                <div class="card-title">
+                    Summary:
+                </div>
+                <div class="card-text">
+                    {{{show.summary}}}
+                </div>
+                <div class="d-flex justify-content-between card-text">
+                    Rating: {{show.rating}}
+                    <a class="btn btn-info"href={{show.official_site}} target="_blank">Website</a>
+                </div>
+                <a class="btn btn-primary" href="/">Back</a>
+            </div>
+        </div>
     </div>
-
 </div>
-
-
