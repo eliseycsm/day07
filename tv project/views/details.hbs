@@ -1,0 +1,30 @@
+<div class="container d-flex justify-content-around">
+    <div class="image">
+        <img src={{show.image}}>
+    </div>
+    <div class="details">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td>{{show.name}}</td>
+            </tr>
+            <tr>
+                <td>Rating: </td>
+                <td>{{show.rating}}</td>
+            </tr>
+
+            <tr>
+                <td>Summary: </td>
+                <td>{{{show.summary}}}</td>
+            </tr>
+            <tr>
+                <td>Website:</td>
+                <td><a href={{show.official_site}} target="_blank">Go to official site</a></td>
+            </tr>
+        </table>
+        <a href="/">Back</a>
+    </div>
+
+</div>
+
+

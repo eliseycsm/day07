@@ -1,10 +1,4 @@
-select 'Creating database...' as '';
-
-drop database if exists leisure;
-
-create database leisure;
-
-use leisure;
+use fsd_leisure;
 
 select 'Creating tables...' as '';
 
