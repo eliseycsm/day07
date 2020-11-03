@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Search Form</h1>
+
+    <form action="/search" method="get">
+
+        <div>
+            <label for="appCat">Application Categories</label>
+        </div>
+        <select name="appCat" id="app_cat">
+            {{#each category}}
+            <option name="appCat" value={{this}}>{{this}}</option>
+        {{/each}}
+        
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
