@@ -23,7 +23,7 @@ app.set('views', __dirname + '/views')
 //create database connection pool
 const pool = mysql.createPool({
     host: process.env.DB_HOST || 'db4free.net', //on local server is 'localhost',
-    port: process.env.DB_PORT || 3306, 
+    port: process.env.PORT || 3306, 
     database: process.env.DB_NAME || 'fsd_leisure', //on local server is leisure
     user: process.env.DB_USER,  //set to username for db4free.net acct
     password: process.env.DB_PASSWORD, //set to password for db4free.net acct
