@@ -10,12 +10,13 @@
   "author": "elise",
   "license": "ISC",
   "dependencies": {
+    "check-updates": "^0.0.1",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "init": "^0.1.2"
   },
   "engines": {
     "node": "15.x"
-
   }
 }
