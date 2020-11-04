@@ -52,7 +52,7 @@ const startApp = async (app, pool) => {
     }
 }
 
-app.get("/:id", async (req, resp) => {
+app.get("/show/:id", async (req, resp) => {  //need to change the /:id to /show/:id else it will match anything after root
     const tvid = req.params.id
 
     const conn = await pool.getConnection()
@@ -69,12 +69,9 @@ app.get("/:id", async (req, resp) => {
     }catch(e){
         console.info(`Error was detected: `, e)
     }finally{
-        await conn.release()
+        conn.release()
     } 
 })
-
-
-
 
 //initial set up
 app.get("/", async (req, resp) => {
@@ -93,7 +90,7 @@ app.get("/", async (req, resp) => {
         console.info(`Error was detected: `, e)
     } finally {
         //always rmb to close connection
-        await conn.release()
+        conn.release()
     }
 })
 
