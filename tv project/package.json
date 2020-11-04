@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"
-
   },
   "author": "elise",
   "license": "ISC",
@@ -17,5 +16,6 @@
   },
   "engines": {
     "node": "15.0"
-  }
+  },
+  "devDependencies": {}
 }
