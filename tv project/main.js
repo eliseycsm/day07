@@ -31,7 +31,7 @@ const pool = mysql.createPool({
     timezone: '+08:00'
 })
 
-
+//
 //ping our database and make sure its there before starting up server
 const startApp = async (app, pool) => {
     try {
